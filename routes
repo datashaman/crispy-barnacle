@@ -1,0 +1,15 @@
+// routes/web.php
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// routes/api.php
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/examples', 'App\Http\Controllers\ExampleController@index');
